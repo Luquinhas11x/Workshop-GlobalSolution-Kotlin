@@ -1,0 +1,6 @@
+Link do repositório do github: https://github.com/Luquinhas11x/Workshop-GlobalSolution-Kotlin.git
+
+Integrantes:
+Lucas Santana de Paula – 95338
+João Pedro Bueno Milanezi – 88322
+Guilherme Tomé Dias – 94186
