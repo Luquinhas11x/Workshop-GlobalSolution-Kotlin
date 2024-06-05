@@ -33,7 +33,7 @@ class BeachAdapter : RecyclerView.Adapter<BeachAdapter.ItemViewHolder>() {
         val textViewName = view.findViewById<TextView>(R.id.tvName)
         val textViewCity = view.findViewById<TextView>(R.id.tvCity)
         val textViewState = view.findViewById<TextView>(R.id.tvState)
-        val button = view.findViewById<ImageButton>(R.id.btnDelete)
+        val button = view.findViewById<Button>(R.id.btnDelete)
         fun bind(item: Beach) {
             textViewName.text = item.name
             textViewCity.text = item.city

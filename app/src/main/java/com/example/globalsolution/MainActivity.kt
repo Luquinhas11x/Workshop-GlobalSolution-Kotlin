@@ -49,7 +49,15 @@ class MainActivity : ComponentActivity() {
             val state = editState.text.toString()
 
             if (name.isBlank() || city.isBlank() || state.isBlank()) {
-                // Handle error, e.g., show a Toast message
+                if (name.isBlank()) {
+                    editName.error = "Campo obrigatório"
+                }
+                if (city.isBlank()) {
+                    editCity.error = "Campo obrigatório"
+                }
+                if (state.isBlank()) {
+                    editState.error = "Campo obrigatório"
+                }
                 return@setOnClickListener
             }
 
@@ -58,6 +66,8 @@ class MainActivity : ComponentActivity() {
             editName.text.clear()
             editCity.text.clear()
             editState.text.clear()
+
+            recyclerView.layoutManager = LinearLayoutManager(this)
         }
 
         viewModel.itemsLiveData.observe(this) { items ->
